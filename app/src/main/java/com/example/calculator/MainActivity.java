@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checker(View view) {
-        String firstNum = firstNumInput.getText().toString(); //
+        String firstNum = firstNumInput.getText().toString();
         String secondNum = secondNumInput.getText().toString();
 
         if (firstNum.equals("") || secondNum.equals("")) { // checking if both inputs are empty
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                         answer.setText(ans1 != Math.round(ans1) ? Double.toString(ans1): Long.toString(Math.round(ans1)));
                         break;
                     case R.id.sub:
-                        double ans2 = Double.valueOf(firstNum)- Double.valueOf(secondNum);
+                        double ans2 = Double.valueOf(firstNum) - Double.valueOf(secondNum);
                         answer.setText(ans2 != Math.round(ans2) ? Double.toString(ans2): Long.toString(Math.round(ans2)));
                         break;
                     case R.id.mul:
